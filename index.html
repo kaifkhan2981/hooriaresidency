@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hooria Residency | Luxury Living</title>
-    <meta name="description" content="Experience premium luxury living at Hooria Residency. Modern apartments with world-class amenities.">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hooria Residency | Premium Living</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/logo.png" alt="Hooria Residency Logo">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#amenities">Amenities</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h1>Welcome to Hooria Residency</h1>
-            <p>Your dream home awaits in the heart of luxury.</p>
-        </section>
-    </main>
+<header>
+    <div class="container">
+        <h1 class="logo">Hooria Residency</h1>
+        <a href="#contact" class="btn">Book Now</a>
+    </div>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Hooria Residency. All rights reserved.</p>
-    </footer>
+<section class="hero">
+    <div class="overlay">
+        <h2>Experience Premium Living</h2>
+        <p>Modern Apartments | Flexible Installments</p>
+        <a href="#contact" class="btn-primary">Schedule Visit</a>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<section class="about">
+    <div class="container">
+        <h2>About The Project</h2>
+        <p>Hooria Residency offers modern architecture, smart layouts and secure living environment ideal for families and investors.</p>
+    </div>
+</section>
+
+<section class="floor-plans">
+    <div class="container">
+        <h2>Floor Plans</h2>
+        <div class="plan">
+            <h3>A1 Type</h3>
+            <p>2 Bedrooms | Lounge | Kitchen | Balcony</p>
+        </div>
+        <div class="plan">
+            <h3>B Type</h3>
+            <p>1 Bedroom | Lounge | Kitchen | Balcony</p>
+        </div>
+    </div>
+</section>
+
+<section class="payment">
+    <div class="container">
+        <h2>Flexible Payment Plan</h2>
+        <p>30% Down Payment | Easy Monthly Installments</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Book Your Unit</h2>
+        <form id="leadForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email">
+            <select>
+                <option>Select Unit Type</option>
+                <option>A1 Type</option>
+                <option>B Type</option>
+            </select>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>

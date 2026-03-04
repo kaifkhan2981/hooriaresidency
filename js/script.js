@@ -1,4 +1,4 @@
-// Initial script for Hooria Residency
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Hooria Residency site loaded.');
+document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Our team will contact you soon.");
 });
