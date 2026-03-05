@@ -91,6 +91,22 @@ $plans_result = $conn->query($plans_query);
 </section>
 <?php endif; ?>
 
+<?php if ($gallery_result->num_rows > 0): ?>
+<section class="gallery">
+    <div class="container">
+        <h2>Project Gallery</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;">
+            <?php while($img = $gallery_result->fetch_assoc()): ?>
+            <div class="gallery-img">
+                <img src="uploads/gallery/<?php echo $img['image_path']; ?>" alt="<?php echo $img['title']; ?>" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <p><?php echo $img['title']; ?></p>
+            </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
 <section class="payment">
     <div class="container">
         <h2>Flexible Payment Plan</h2>
